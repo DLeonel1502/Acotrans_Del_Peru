@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(87,126,170);
+
+}
+
+header{
+    min-height: 100vh;
+}
+
+.Inicio{
+    background-image: url(Imagenes/Inicio/Inicio.PNG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-block-end: 225px;
+}
+
+.Inicio::before{
+    content: "";
+    position: absolute;
+    bottom: 15px; /* Cambia este valor para mover la línea hacia abajo o hacia arriba */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(87,126,170);
+    filter: blur(3px); /* Efecto borroso */
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/*.Acotrans-logo{
+color: blue;
+font-size: 25px;
+text-transform: uppercase;
+}*/
+
+.Acotrans-logo img{
+    height: 50px; 
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    color: white;
+}
+
+.navbar ul li a:hover{
+    color: blue;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+    margin-top: 150px;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    padding-right: 120px;
+}
+
+.header-txt h1{
+    font-family:'Open Sans', sans-serif;
+    font-size: 70px;
+    line-height: 1;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.header-txt p{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn{
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+@media(max-width:991px){
+
+    .menu{
+        padding: 20px;
+        position: relative;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: pink;
+        display: none;
+    }
+
+    .menu .navbar ul{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: blue;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        padding: 30px;
+        margin-top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        padding: 0 0 40px 0;
+    }
+
+}
+
+
+/*SERVICIOS!!!!*/
+
+.Servicios{
+    font-family:'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 2.5;
+    color: black;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.service img {
+    width: 550px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h2 {
+    color: #000;
+    font-size: 30px; /*Tamaño de los titulos*/
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.service-content p {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 20px; /*Tamaño de texto de cada parrafo*/
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.service-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-reverse img {
+    width: 500px; /* Tamaño de la imagen*/
+    margin-left: 20px; /* Ajusta el margen para la imagen a la izquierda */
+}
+
+
+
+/*NUESTRAS OPERACIONES!!!!*/
+
+.NOperaciones{
+    font-family:'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 2.5;
+    color: black;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  
+  .gallery-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Controla el tamaño del área visible */
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img {
+    height: 200px; /* Ajusta el tamaño de las imágenes */
+    object-fit: cover;
+    border-radius: 8px;
+    
+  }
+  
+  .next-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .next-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .prev-btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prev-btn:hover{
+    background-color: #0056b3;
+  }
+
+  .Servicios::before{
+    content: "";
+    position: absolute;
+    bottom: -1793px; /* Cambia este valor para mover la línea hacia abajo o hacia arriba */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(87,126,170);
+    filter: blur(3px); /* Efecto borroso */
+}
+
+  /*NOSOTROS!!!*/
+
+
+.new-section {
+    background-color: #F0EEEB; /* Fondo color crema */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Título centrado */
+  .new-section h2 {
+    font-family:'Open Sans', sans-serif;
+    font-size: 70px;
+    line-height: 2.5;
+    color: black;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilo general para las filas de contenido */
+  .content-row {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    justify-content: center;
+    margin-bottom: 30px; /* Espacio entre filas */
+    gap: 80px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Imagen reducida en la primera fila, más a la izquierda */
+  .small-image {
+    width: 45%; /* Ajusta el ancho para reducir el tamaño de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: -30px; /* Mueve la imagen hacia la izquierda */
+  }
+  
+  /* Imagen en tamaño natural */
+  .natural-image {
+    object-fit: cover;
+    border-radius: 8px;
+    width: 50%; /* Ajusta el ancho de la segunda imagen */
+    margin-left: 50px; /* Agrega margen a la izquierda de la imagen */
+  }
+  
+  /* Estilo para los textos */
+  .text-right, .text-left {
+    width: 50%; /* Ajusta el ancho del texto */
+    text-align: left;
+    color: #333;
+    font-size: 1.3em;
+  }
+  
+  /* Títulos dentro de los textos */
+  .text-right h3, .text-left h3 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: rgb(black); /* Color azul para los títulos */
+    font-weight: bold; /* Hace los títulos en negrita */
+    
+  }
+  
+  /* Párrafos debajo de los títulos */
+  .text-right p, .text-left p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: black; 
+  }
+
+  .content-normal {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    justify-content: center;
+    margin-bottom: 30px; /* Espacio entre filas */
+    gap: 80px; /* Espacio entre imagen y texto */
+  }
+
+  /* Imagen a la izquierda */
+.left-image {
+  width: 50%; /* Tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 50px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para los textos */
+.text-right {
+  width: 50%; /* Ajusta el ancho del texto */
+  text-align: left;
+  color: #333;
+  font-size: 1.4em;
+
+}
+
+
+
+/*LA PREGUNTA!!!!*/
+
+
+
+
+.question {
+    text-align: center;
+    padding: 50px;
+    background-color: #F0EEEB;
+  }
+  
+  .question h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .question-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .question .line {
+    width: 80%; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea (puedes cambiarlo) */
+    margin: 0 auto 85px auto; /* Centra la línea y añade espacio debajo */
+  }
+
+ 
+  
+  .card {
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card1 {
+    background-color: #a4d4f9; /* Azul */
+  }
+  
+  .card2 {
+    background-color: #FBBE6A; /* Verde */
+  }
+  
+  .card3 {
+    background-color: #f3f02a; /* Amarillo */
+  }
+  
+  .card .icon img {
+    width: 230px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .card h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+  }
+
+
+  /*PRINCIPALES CLIENTES*/
+
+
+.PClientes{
+  background-color: #F0EEEB;
+  text-align: center;
+  padding: 80px;
+  
+}
+
+.PClientes h1{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+
+/*=========================================================================*/
+/*CONTACTO*/
+/*=========================================================================*/
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo img {
+  max-width: 310px;
+  height: auto;
+  margin-bottom: 25px; /*Espacio entre el logo y el subtitulo Redes Sociales*/
+}
+
+h3 {
+  font-size: 25px; /*Tamaño de letra de los subtitulos*/
+  margin-bottom: 25px;
+  position: relative;
+}
+
+h3::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 320px; /*Estirarlo a la derecha*/
+  height: 2px;
+  background-color: #000000;
+}
+
+.icons {
+  display: flex;
+  gap: 18px;
+}
+
+.icons a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Sección de Contáctanos */
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.contact-info .info-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact-info .info-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info .info-item strong {
+  font-size: 22px; /*Tamaño de los subtitulos Direccion, Correo y Contacto*/
+  font-weight: bold;
+  margin-bottom: 5px; /* Añade espacio entre el subtítulo y la definición */
+}
+
+.contact-info .info-item p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 19px; /*Tamaño de letra de la definicion*/
+  text-align: left; /* Asegura alineación a la izquierda */
+}
+
+.contact-info a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de Servicios */
+.services p {
+
+  text-align: left;
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+/* Encabezado*/
+
+html {
+  scroll-behavior: smooth;
+}
